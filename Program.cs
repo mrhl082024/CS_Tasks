@@ -1,4 +1,6 @@
-﻿namespace CS_Tests;
+﻿using System.Collections.ObjectModel;
+
+namespace CS_Tests;
 
 class Program
 {
@@ -11,5 +13,14 @@ class Program
         // Japanese greeting
         greetings.YoiTsuitachi();
 
+        Fundament fundament = new Fundament();
+
+        fundament.CheckOddOrEven(2);
+        
+        string fact = "tomater er røde";
+        Console.WriteLine(fundament.GetAnInterestingFact(fact));
+        
+        fundament.SumTwoNumbers(3,6);
+     
     }
 }
